@@ -137,7 +137,7 @@ const Item: FC<any> = ({ item }) => {
           {Array(item.images)
             .fill(null)
             .map((img, index) => (
-              <div style={{ height: "500px" }}>
+              <div style={{ height: "500px" }} key={`${item.id}-image-index`}>
                 <Image
                   width="100%"
                   height="100%"
@@ -193,8 +193,8 @@ const Body: FC = () => {
   return (
     <Grid container spacing={10}>
       {ItemsDb.map((item, i) => (
-        <Grid key={i} item sm={12} md={6} lg={4}>
-          <Item item={item} />
+        <Grid key={`item-wrap-${i}`} item sm={12} md={6} lg={4}>
+          <Item key={`item-${i}`} item={item} />
         </Grid>
       ))}
     </Grid>
