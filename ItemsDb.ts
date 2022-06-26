@@ -1,62 +1,61 @@
 export const ItemsDb: any[] = [
   {
-    title: `(TODO) Balcão Buffet Café`,
-    desc: `Balcão Buffet Café 2 Gavetas E 2 Portas Retrô 90 Olivar
-    
-    blabalbla
-    
-    
-    blebleble
-    
-    bliblibli
-    
-    
-    
-    blobloblo`,
+    title: `Aparador Buffet Retrô 90 Rustik Carvalho/Amarelo`,
+    desc: `Aproximadamente 1 ano de uso.
+	Link para referência: https://www.madeiramadeira.com.br/aparador-buffet-retro-90-rustik-carvalho-amarelo-ac-4491391.html?origem=pla-4491391&utm_source=google&utm_medium=cpc&utm_content=buffet-771&utm_term=&utm_id=17289802545&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGT8-DE55S-WIVn7fJxZfdMtkFPjZkiTHBp09xiD5DqmfaCt6ZMniIhoCPYMQAvD_BwE`,
     id: `armariocafe`,
-    price: 300,
+    price: 250,
     images: 5,
   },
   {
-    title: `(TODO) Mesa e Cadeiras da Sala`,
-    desc: `Mesa de sala marrom com 4 cadeiras`,
+    title: `Conjunto Sala de Jantar`,
+    desc: `Mesa Tampo de Madeira com 4 Cadeiras.
+	Aproximadamente 2 anos e meio de uso.
+	Link referência: https://loja.madesa.com/conjunto-sala-de-jantar-madesa-talita-mesa-tampo-de-madeira-com-4-cadeiras-rustic-crema-bege-marrom/p?_sgm_campaign=scn_9bb971a75a000&_sgm_source=737&_sgm_action=click`,
     id: `mesaecadeiras`,
     price: 300,
     images: 6,
   },
   {
-    title: `(TODO) Mesa retractil de parede`,
-    desc: `Mesa retractil para parede. 4 furos`,
+    title: `Mesa retractil de parede`,
+    desc: `Mesa retractil para parede. 4 furos
+	Aproximadamente 2 anos e meio de uso.`,
     id: `mesaretratil`,
-    price: 300,
+    price: 100,
     images: 4,
   },
   {
-    title: `(TODO) Microondas`,
-    desc: `Microondas Consul **CHECA litragem e modelo!**`,
+    title: `Microondas`,
+    desc: `Micro-ondas Consul Cmo20 Espelhado 20 Litros Prata. 
+	Aproximadamente 1 ano de uso.
+	Link referência: https://www.americanas.com.br/produto/5208702685?epar=bp_pl_00_go_ed_pmax_forno_fogao_cooktop&opn=YSMESP&WT.srch=1&offerId=629809c5234ca7e6fd9c956b&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGVaRjjqrD9wqMn7ZQI2ELAh6WuWdvVpKObOejg5Lx5BMJqh47NNV7RoC3ycQAvD_BwE&cor=Preta&voltagem=127%20v`,
     id: `microondas`,
-    price: 300,
+    price: 400,
     images: 4,
   },
   {
-    title: `(TODO) Fogão`,
-    desc: `Fogão Muller **CHECA litragem e modelo!**`,
+    title: `Fogão 4 Bocas Müeller Fratello Vetro`,
+    desc: `Aproximadamente 1 ano de uso.
+	Link para referência: https://www.bemol.com.br/fogao-4-bocas-mueller-fratello-preto-p1074150?tsid=16&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGdh3AOF_eh3irHWws6NN9PajXZKHGamb4Dbe6t2jxoGWXnRSvmSdzBoCCo8QAvD_BwE`,
     id: `fogao`,
-    price: 300,
+    price: 500,
     images: 4,
   },
   {
-    title: `(TODO) Alexa`,
-    desc: `Alexa **Buscar modelo**`,
+    title: `Alexa`,
+    desc: `Echo Dot (4ª Geração): Smart Speaker com Alexa - Cor Preta
+	Aproximadamente 1 ano de uso.
+	Link para referência: https://www.amazon.com.br/Novo-Echo-Dot-4%C2%AA-gera%C3%A7%C3%A3o/dp/B084DWCZY6/ref=asc_df_B084DWCZY6/?tag=googleshopp00-20&linkCode=df0&hvadid=404840237192&hvpos=&hvnetw=g&hvrand=6497617445017908698&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101696&hvtargid=pla-989629063328&psc=1`,
     id: `alexa`,
-    price: 300,
+    price: 250,
     images: 3,
   },
   {
-    title: `(TODO) Mesa de cabeceira`,
-    desc: `Mesa de cabeceira personalizada (2 unidades)`,
+    title: `2 Mesas de Cabeceira`,
+    desc: `Mesas de Cabeceira personalizada.
+	Aproximadamente 1 ano de uso.`,
     id: `mesadecabeceira`,
-    price: 300,
+    price: 500,
     images: 5,
   },
   {
@@ -112,23 +111,29 @@ export const ItemsDb: any[] = [
 
     Aproximadamente 2 anos de uso.
     
-    Poucas marcas de uso`,
+    Poucas marcas de uso
+    
+    Obs: Preço por unidade`,
     id: `cadeiragamer`,
     price: 1100,
     images: 5,
   },
   {
-    title: `(TODO) Armário de cozinha`,
-    desc: `Armário de cozinha branco Buscar medidas`,
+    title: `Armário de cozinha chão.`,
+    desc: `Balcão multiuso 70cm 100% mdf 2 portas c/tampo para cozinha Branco.
+	Aproximadamente 1 ano de uso.
+	Link para referência: https://www.americanas.com.br/produto/2975205372?pfm_type=card_pedido&pfm_page=detalhes_do_pedido&pfm_carac=minha_conta&pfm_pos=null&pfm_index=null`,
     id: `armariocozinha`,
-    price: 300,
+    price: 250,
     images: 3,
   },
   {
-    title: `(TODO) Catefeira (Buscar marca e modelo)`,
-    desc: `Cafeteira blablabla tempo de uso e etc`,
+    title: `Catefeira Dolce Gusto`,
+    desc: `Modelo GENIO S PLUS.
+	Aproximadamente 1 ano e meio de uso.
+	Link referência:https://www.nescafe-dolcegusto.com.br/maquinas-cafe/genio-s-plus-preta-110v`,
     id: `cafeteira`,
-    price: 300,
+    price: 400,
     images: 5,
   },
   {
@@ -144,10 +149,12 @@ export const ItemsDb: any[] = [
     images: 8,
   },
   {
-    title: `(TODO) Mesa de varanda`,
-    desc: `Mesa de varanta sem cadeiras`,
+    title: `Mesa de varanda`,
+    desc: `Mesa de varanta redonda tampo de vidro (sem cadeiras).
+	Observação: 1 dos pés descascando'.
+	Link para referência: https://www.americanas.com.br/produto/78759985?epar=bp_pl_00_go_mv_pmax_geral&opn=YSMESP&WT.srch=1&offerId=5e47f2d779bf8430cbd10371&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGeyBphf4irDDiFD9LQi2vOa-XKkrACo_YMM0vh6Jk04ubuR0dTo3KhoCZYkQAvD_BwE&cor=Marrom%2FMarrom`,
     id: `mesavaranda`,
-    price: 300,
+    price: 100,
     images: 4,
   },
   {
@@ -161,18 +168,35 @@ export const ItemsDb: any[] = [
     images: 4,
   },
   {
-    title: `(TODO) Escrivanina Modelo 1`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Escrivanina Escritório Modelo 1`,
+    desc: `Escrivanina Escritório Modelo 1
+
+    Dimensões: Profundidade: 45cm / Largura: 110cm
+    
+    Aproximadamente 3 anos e outra com 6 meses de uso
+
+    Algumas poucas marcas de uso. Totalmente firme
+    
+    Obs: preço do unidade`,
+    id: `escrivaninhamodelo1`,
+    price: 100,
+    images: 1,
   },
   {
-    title: `(TODO) Escrivanina Modelo 2`,
-    desc: ``,
-    id: ``,
+    title: `Escrivanina Modelo 2 com suporte para teclado retráctil`,
+    desc: `Escrivanina Escritório Modelo 2
+    
+    Dimensões: Profundidade: 60cm / Largura: 110cm
+    + prateleira retrátil teclado/mouse
+
+    Duas unidades.
+    
+    Algumas poucas marcas de suso. Totalmente firme.
+
+    Aproximadamente 3 anos`,
+    id: `escrivaninhamodelo2`,
     price: 0,
-    images: 0,
+    images: 4,
   },
   {
     title: `(TODO) Torradeira`,
@@ -189,25 +213,50 @@ export const ItemsDb: any[] = [
     images: 0,
   },
   {
-    title: `(TODO) Móvel area de serviço`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Móvel de apoio área de serviço preto`,
+    desc: `Móvel de apoio área de serviço com 5 prateleiras
+    
+    Aproxidademente 1 anos de uso
+    `,
+    id: `movelapoioservico`,
+    price: 80,
+    images: 4,
   },
   {
-    title: `(TODO) Prateleiras`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Prateleiras pequenas`,
+    desc: `
+    Prateleira pequena branca 
+    
+    Dimensões:
+    Largura: 60cm / Profundidade: 20cm
+    
+    Obs: Preço por unidade`,
+
+    id: `prateleirapequena`,
+    price: 20,
+    images: 4,
   },
   {
-    title: `(TODO) Escada`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Prateleira Grandes`,
+    desc: `
+    Prateleira Grandes branca
+
+    Dimensões:
+    Largura: 80cm / Profundidade: 25cm`,
+    id: `prateleiragrande`,
+    price: 25,
+    images: 2,
+  },
+  {
+    title: `Escada`,
+    desc: `Escada com 4 degraus 
+    
+    Aproximadamente 6 meses de uso
+    
+    Sem detalhes`,
+    id: `escada`,
+    price: 100,
+    images: 4,
   },
   {
     title: `(TODO) Lixeiras cromadas pequena`,
@@ -273,11 +322,27 @@ export const ItemsDb: any[] = [
     images: 0,
   },
   {
-    title: `(TODO) Óculos Rift`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Óculos Rift`,
+    desc: `
+    Óculos Rift com 3 anos de uso.
+
+    Usado regularmente por cerca de um ano. Depois, exporadicamente. 
+    Passou a maior parte do tempo dentro do guarda-roupas.
+
+    Sem detalhes no funcionamento ou nas lentes.
+
+    As almofadas que ficam entre o Rift e o rosto estão visualmente gastas, porém
+    sem nenhuma alteração na sua função. 
+
+    Sem detalhes nos controles
+
+    Obs: Não acompanha a modelo
+    
+    Referencia:
+    https://www.amazon.com.br/Oculus-PC-Powered-Gaming-Headset-Black/dp/B07PTMKYS7`,
+    id: `rift`,
+    price: 2000,
+    images: 4,
   },
   {
     title: `(TODO) Desktop`,
@@ -308,11 +373,15 @@ export const ItemsDb: any[] = [
     images: 0,
   },
   {
-    title: `(TODO) Varal de teto`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Varal de teto`,
+    desc: `Varal de teto vou várias varetas
+    
+    Sem detalhes
+    
+    Usado por 8 meses`,
+    id: `varaldeteto`,
+    price: 150,
+    images: 5,
   },
   {
     title: `(TODO) Organizadores modelo 2`,
@@ -357,18 +426,29 @@ export const ItemsDb: any[] = [
     images: 0,
   },
   {
-    title: `(TODO) Jarros decorativos`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Vasos Decorativos`,
+    desc: `Vasos Decorativos brancos para pequenas plantas
+    
+    1 ano de uso
+    
+    Sem detalhes`,
+    id: `vasosdecorativos`,
+    price: 20,
+    images: 2,
   },
   {
-    title: `(TODO) Suporte para cápsulas + caixinha para cápsulas`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Suporte para cápsulas + caixinha para cápsulas de brinde`,
+    desc: `
+    Suporte para 32 cápsulas Dolce Gusto
+
+    Sem detalhes
+
+    Referência:
+    https://www.amazon.com.br/Suporte-Porta-Cápsulas-Expresso-Cromado/dp/B07CN3WXTX/ref=asc_df_B076LGM73H/?tag=googleshopp06-20&linkCode=df0&hvadid=379723158603&hvpos=&hvnetw=g&hvrand=6243585778123210774&hvpone=&hvptwo=&hvqmt=&hvdev=m&hvdvcmdl=&hvlocint=&hvlocphy=9101696&hvtargid=pla-902596080911&psc=1&th=1
+    `,
+    id: `suportecapsulas`,
+    price: 60,
+    images: 4,
   },
   {
     title: `(TODO) Placa decorativa`,
@@ -385,18 +465,27 @@ export const ItemsDb: any[] = [
     images: 0,
   },
   {
-    title: `(TODO) Kit coqueteleira`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Kit Coqueteleira`,
+    desc: `Kit Coqueteleira
+    
+    Acompanha tapete, coqueteleira, táboa e espremedor de limão
+    Poucas vezes usado
+    
+    Sem detalhes`,
+    id: `kitcoqueteleira`,
+    price: 50,
+    images: 4,
   },
   {
-    title: `(TODO) Kit copos`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Kit copos`,
+    desc: `Kit de copos
+    
+    Sem detalhes
+    
+    Poucas vezes usados`,
+    id: `copos`,
+    price: 20,
+    images: 4,
   },
   {
     title: `(TODO) Organizador 3`,
