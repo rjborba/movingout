@@ -2,6 +2,7 @@ import {
   Button,
   Container,
   Grid,
+  IconButton,
   Link,
   Paper,
   Stack,
@@ -18,6 +19,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import CloseIcon from "@mui/icons-material/Close";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 
 import type { NextPage } from "next";
@@ -44,7 +46,7 @@ const BodySection = styled("section")({
 
   backgroundImage:
     "linear-gradient(to right top, #ffdf00, #ebe300, #d7e600, #c0e900, #a8eb12)",
-  borderTop: "14px solid black",
+  borderTop: "6px solid black",
   minHeight: "420px",
   paddingTop: "120px",
   paddingBottom: "64px",
@@ -72,6 +74,7 @@ const ImageWrapper = styled("div")({
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   backgroundColor: "black",
+  position: "relative",
 }));
 
 const upAndDown = keyframes`
@@ -89,65 +92,119 @@ const DownIndicator = styled(KeyboardDoubleArrowDownIcon)({
 });
 
 const ImageModal: FC<any> = ({
+  modalImagePath,
   open,
   onClose = () => undefined,
 }: {
+  modalImagePath: string;
   open: boolean;
   onClose: () => any;
 }) => (
-  <Modal
-    open={open}
-    onClose={onClose}
-    aria-labelledby="modal-modal-title"
-    aria-describedby="modal-modal-description"
-  >
+  <Modal open={open} onClose={onClose}>
     <Box
       sx={{
-        position: "absolute" as "absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
-        width: 400,
+        position: "absolute",
+        top: "10%",
+        bottom: "10%",
+        left: "10%",
+        right: "10%",
+
         bgcolor: "background.paper",
-        border: "2px solid #000",
-        boxShadow: 24,
-        p: 4,
+        boxShadow: 12,
+        background: "black",
       }}
     >
-      <Typography id="modal-modal-title" variant="h6" component="h2">
-        Text in a modal
-      </Typography>
-      <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-      </Typography>
+      <IconButton
+        onClick={() => onClose()}
+        sx={{
+          position: "absolute",
+          right: 0,
+          top: 0,
+          color: "white",
+          zIndex: 10,
+        }}
+      >
+        <CloseIcon />
+      </IconButton>
+      <Image objectFit="contain" layout="fill" src={modalImagePath} />
     </Box>
   </Modal>
 );
 
-const Item: FC<any> = ({ item }) => {
+const RenderCarousel: FC<any> = ({ item, setModalImagePath }) => {
+  return (
+    <Carousel
+      height={500}
+      autoPlay={false}
+      animation={"slide"}
+      navButtonsAlwaysVisible
+      cycleNavigation={false}
+    >
+      {Array(item.images)
+        .fill(null)
+        .map((img, index) => (
+          <div style={{ height: "500px" }} key={`${item.id}-image-index`}>
+            <Image
+              objectFit="cover"
+              layout="fill"
+              src={`/${item.id}/${index + 1}.jpeg`}
+              onClick={() => setModalImagePath(`/${item.id}/${index + 1}.jpeg`)}
+            />
+          </div>
+        ))}
+    </Carousel>
+  );
+};
+
+const RenderNoImagePlaceholder: FC = () => (
+  <div style={{ height: "500px" }}>
+    <Image
+      width="100%"
+      height="100%"
+      objectFit="cover"
+      layout="responsive"
+      src={`/noimage.png`}
+    />
+  </div>
+);
+
+const Item: FC<any> = ({ item, setModalImagePath }) => {
+  const whatsappText = `Olá! Tenho interesse no item ${item.title}. Ainda está disponível?`;
+
   return (
     <StyledPaper>
       <Box mb={2}>
-        <Carousel
-          autoPlay={false}
-          animation={"slide"}
-          navButtonsAlwaysVisible
-          cycleNavigation={false}
-        >
-          {Array(item.images)
-            .fill(null)
-            .map((img, index) => (
-              <div style={{ height: "500px" }} key={`${item.id}-image-index`}>
-                <Image
-                  width="100%"
-                  height="100%"
-                  objectFit="cover"
-                  layout="fill"
-                  src={`/${item.id}/${index + 1}.jpeg`}
-                />
-              </div>
-            ))}
-        </Carousel>
+        {item.sold && (
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: 500,
+              width: "100%",
+              position: "absolute",
+              zIndex: 2,
+              overflow: "hidden",
+              background: "#000000b5",
+            }}
+          >
+            <Box
+              sx={{
+                padding: "10px 40px",
+                backgroundColor: "red",
+                transform: "rotate(30deg)",
+                opacity: 0.8,
+              }}
+            >
+              <Typography variant="h4">Vendido</Typography>
+            </Box>
+          </Box>
+        )}
+        {item.images > 0 ? (
+          <RenderCarousel item={item} setModalImagePath={setModalImagePath} />
+        ) : (
+          <RenderNoImagePlaceholder />
+        )}
       </Box>
       <Box p={3}>
         <Typography variant="h5" color="rgb(180 234 9)">
@@ -156,11 +213,16 @@ const Item: FC<any> = ({ item }) => {
         <Box mt={1}>
           <Typography
             variant="body1"
-            sx={{ whiteSpace: "pre-line" }}
+            sx={{ whiteSpace: "pre-line", wordBreak: "break-word" }}
             color="rgb(246 255 216)"
           >
             {item.desc}
           </Typography>
+          {item.link?.length > 0 ? (
+            <Box mt={2}>
+              <Link href={item.link}>Link de referencia</Link>
+            </Box>
+          ) : null}
         </Box>
         <Box mt={2}>
           <Stack>
@@ -172,13 +234,21 @@ const Item: FC<any> = ({ item }) => {
             </Stack>
           </Stack>
         </Box>
-        <Button
-          variant="contained"
-          startIcon={<WhatsAppIcon />}
-          color="success"
-        >
-          Entrar em contato
-        </Button>
+        {!item.sold && (
+          <Link
+            target={"_blank"}
+            href={`https://api.whatsapp.com/send?phone=+5581999995304&text=%20${whatsappText}`}
+          >
+            <Button
+              variant="contained"
+              startIcon={<WhatsAppIcon />}
+              color="success"
+            >
+              Entrar em contato
+            </Button>
+          </Link>
+        )}
+
         <Box mt={4}>
           <Typography component="span" variant="h5" color="success.light">
             R$ {item.price}
@@ -189,33 +259,32 @@ const Item: FC<any> = ({ item }) => {
   );
 };
 
-const Body: FC = () => {
+const Body: FC<any> = ({ setModalImagePath }) => {
   return (
-    <Grid container spacing={10}>
-      {ItemsDb.map((item, i) => (
-        <Grid key={`item-wrap-${i}`} item sm={12} md={6} lg={4}>
-          <Item key={`item-${i}`} item={item} />
-        </Grid>
-      ))}
+    <Grid container spacing={5}>
+      {ItemsDb.filter((item) => !item.title?.includes("TODO")).map(
+        (item, i) => (
+          <Grid key={`item-wrap-${i}`} item xs={12} md={6} lg={4}>
+            <Item
+              key={`item-${i}`}
+              item={item}
+              setModalImagePath={setModalImagePath}
+            />
+          </Grid>
+        )
+      )}
     </Grid>
   );
 };
 
 const Home: NextPage = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
+  const [modalImagePath, setModalImagePath] = useState(null);
 
   return (
-    <div
-      style={{
-        backgroundImage:
-          "linear-gradient(to right top, #ffdf00, #ebe300, #d7e600, #c0e900, #a8eb12)",
-      }}
-    >
+    <div>
       <HeaderSection aria-label="header-section">
         <ImageWrapper>
           <Image
-            width="100%"
-            height="100%"
             objectFit="cover"
             objectPosition="0% 25%"
             layout="fill"
@@ -223,8 +292,6 @@ const Home: NextPage = () => {
             src="/borbaejosi.png"
           />
           <Image
-            width="100%"
-            height="100%"
             objectFit="revert"
             layout="fill"
             style={{ mixBlendMode: "multiply", opacity: "20%" }}
@@ -254,7 +321,7 @@ const Home: NextPage = () => {
             textAlign="center"
             color="white"
           >
-            <Typography variant="h1" fontWeight="bold">
+            <Typography variant="h2" fontWeight="bold">
               Josi e Borba
             </Typography>
             <Box pt={3}>
@@ -267,11 +334,9 @@ const Home: NextPage = () => {
         </StyledHeader>
       </HeaderSection>
       <BodySection aria-label="body-section">
-        {/* <Button onClick={() => setModalOpen(true)}>Open Modal</Button> */}
-
         <Box pt={6} />
         <Container maxWidth="xl">
-          <Body />
+          <Body setModalImagePath={setModalImagePath} />
         </Container>
       </BodySection>
       <FooterSection>
@@ -322,7 +387,11 @@ const Home: NextPage = () => {
           <Typography>© 2022</Typography>
         </Box>
       </FooterSection>
-      <ImageModal open={isModalOpen} onClose={() => setModalOpen(false)} />
+      <ImageModal
+        modalImagePath={modalImagePath}
+        open={modalImagePath}
+        onClose={() => setModalImagePath(null)}
+      />
     </div>
   );
 };

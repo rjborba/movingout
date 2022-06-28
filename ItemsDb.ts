@@ -1,20 +1,20 @@
 export const ItemsDb: any[] = [
   {
     title: `Aparador Buffet Retrô 90 Rustik Carvalho/Amarelo`,
-    desc: `Aproximadamente 1 ano de uso.
-	Link para referência: https://www.madeiramadeira.com.br/aparador-buffet-retro-90-rustik-carvalho-amarelo-ac-4491391.html?origem=pla-4491391&utm_source=google&utm_medium=cpc&utm_content=buffet-771&utm_term=&utm_id=17289802545&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGT8-DE55S-WIVn7fJxZfdMtkFPjZkiTHBp09xiD5DqmfaCt6ZMniIhoCPYMQAvD_BwE`,
+    desc: `Aproximadamente 1 ano de uso.`,
     id: `armariocafe`,
     price: 250,
     images: 5,
+    link: "https://www.madeiramadeira.com.br/aparador-buffet-retro-90-rustik-carvalho-amarelo-ac-4491391.html?origem=pla-4491391&utm_source=google&utm_medium=cpc&utm_content=buffet-771&utm_term=&utm_id=17289802545&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGT8-DE55S-WIVn7fJxZfdMtkFPjZkiTHBp09xiD5DqmfaCt6ZMniIhoCPYMQAvD_BwE",
   },
   {
     title: `Conjunto Sala de Jantar`,
     desc: `Mesa Tampo de Madeira com 4 Cadeiras.
-	Aproximadamente 2 anos e meio de uso.
-	Link referência: https://loja.madesa.com/conjunto-sala-de-jantar-madesa-talita-mesa-tampo-de-madeira-com-4-cadeiras-rustic-crema-bege-marrom/p?_sgm_campaign=scn_9bb971a75a000&_sgm_source=737&_sgm_action=click`,
+	Aproximadamente 2 anos e meio de uso.`,
     id: `mesaecadeiras`,
     price: 300,
     images: 6,
+    link: "https://loja.madesa.com/conjunto-sala-de-jantar-madesa-talita-mesa-tampo-de-madeira-com-4-cadeiras-rustic-crema-bege-marrom/p?_sgm_campaign=scn_9bb971a75a000&_sgm_source=737&_sgm_action=click",
   },
   {
     title: `Mesa retractil de parede`,
@@ -27,28 +27,28 @@ export const ItemsDb: any[] = [
   {
     title: `Microondas`,
     desc: `Micro-ondas Consul Cmo20 Espelhado 20 Litros Prata. 
-	Aproximadamente 1 ano de uso.
-	Link referência: https://www.americanas.com.br/produto/5208702685?epar=bp_pl_00_go_ed_pmax_forno_fogao_cooktop&opn=YSMESP&WT.srch=1&offerId=629809c5234ca7e6fd9c956b&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGVaRjjqrD9wqMn7ZQI2ELAh6WuWdvVpKObOejg5Lx5BMJqh47NNV7RoC3ycQAvD_BwE&cor=Preta&voltagem=127%20v`,
+	Aproximadamente 1 ano de uso.`,
     id: `microondas`,
     price: 400,
     images: 4,
+    link: "https://www.americanas.com.br/produto/5208702685?epar=bp_pl_00_go_ed_pmax_forno_fogao_cooktop&opn=YSMESP&WT.srch=1&offerId=629809c5234ca7e6fd9c956b&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGVaRjjqrD9wqMn7ZQI2ELAh6WuWdvVpKObOejg5Lx5BMJqh47NNV7RoC3ycQAvD_BwE&cor=Preta&voltagem=127%20v",
   },
   {
     title: `Fogão 4 Bocas Müeller Fratello Vetro`,
-    desc: `Aproximadamente 1 ano de uso.
-	Link para referência: https://www.bemol.com.br/fogao-4-bocas-mueller-fratello-preto-p1074150?tsid=16&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGdh3AOF_eh3irHWws6NN9PajXZKHGamb4Dbe6t2jxoGWXnRSvmSdzBoCCo8QAvD_BwE`,
+    desc: `Aproximadamente 1 ano de uso.`,
     id: `fogao`,
     price: 500,
     images: 4,
+    link: "https://www.bemol.com.br/fogao-4-bocas-mueller-fratello-preto-p1074150?tsid=16&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGdh3AOF_eh3irHWws6NN9PajXZKHGamb4Dbe6t2jxoGWXnRSvmSdzBoCCo8QAvD_BwE",
   },
   {
     title: `Alexa`,
     desc: `Echo Dot (4ª Geração): Smart Speaker com Alexa - Cor Preta
-	Aproximadamente 1 ano de uso.
-	Link para referência: https://www.amazon.com.br/Novo-Echo-Dot-4%C2%AA-gera%C3%A7%C3%A3o/dp/B084DWCZY6/ref=asc_df_B084DWCZY6/?tag=googleshopp00-20&linkCode=df0&hvadid=404840237192&hvpos=&hvnetw=g&hvrand=6497617445017908698&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101696&hvtargid=pla-989629063328&psc=1`,
+	Aproximadamente 1 ano de uso.`,
     id: `alexa`,
     price: 250,
     images: 3,
+    link: "https://www.amazon.com.br/Novo-Echo-Dot-4%C2%AA-gera%C3%A7%C3%A3o/dp/B084DWCZY6/ref=asc_df_B084DWCZY6/?tag=googleshopp00-20&linkCode=df0&hvadid=404840237192&hvpos=&hvnetw=g&hvrand=6497617445017908698&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101696&hvtargid=pla-989629063328&psc=1",
   },
   {
     title: `2 Mesas de Cabeceira`,
@@ -61,13 +61,11 @@ export const ItemsDb: any[] = [
   {
     title: `Air Fryer 3.2 L`,
     desc: `Air Fryer MAXIS 3.2L
-      2 anos de uso
-      
-      Referência:
-      https://www.buscape.com.br/fritadeira/fritadeira-eletrica-sem-oleo-maxis-air-fryer-af-33-capacidade-3-2l`,
+      2 anos de uso`,
     id: `airfryer`,
     price: 250,
     images: 4,
+    link: "https://www.buscape.com.br/fritadeira/fritadeira-eletrica-sem-oleo-maxis-air-fryer-af-33-capacidade-3-2l",
   },
 
   {
@@ -75,13 +73,11 @@ export const ItemsDb: any[] = [
     desc: `Filtro de água Gelada/Natural consul
     aproximadamente 1 ano de uso
     
-    Sem detalhes. Filtro trocado em Maio/2022
-    
-    Referência:
-    https://www.amazon.com.br/gp/product/B078S8GX9Q/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&th=1`,
+    Sem detalhes. Filtro trocado em Maio/2022`,
     id: `filtrodeagua`,
     price: 700,
     images: 3,
+    link: "https://www.amazon.com.br/gp/product/B078S8GX9Q/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&th=1",
   },
   {
     title: `Sofá 4 lugares`,
@@ -91,17 +87,17 @@ export const ItemsDb: any[] = [
     id: `sofa`,
     price: 1400,
     images: 4,
+    link: "",
   },
   {
     title: `TV Sony Bravia 48 polegadas`,
     desc: `Modelo 48W655D
     
-    Aproximadamente 3 anos de uso. Sem detalhes
-    
-    https://www.sony.com.br/electronics/support/televisions-projectors-lcd-tvs/kdl-48w655d/specifications`,
+    Aproximadamente 3 anos de uso. Sem detalhes`,
     id: `tv`,
     price: 1000,
     images: 3,
+    link: "https://www.sony.com.br/electronics/support/televisions-projectors-lcd-tvs/kdl-48w655d/specifications",
   },
   {
     title: `Cadeira Gamer (2 unidades)`,
@@ -117,55 +113,54 @@ export const ItemsDb: any[] = [
     id: `cadeiragamer`,
     price: 1100,
     images: 5,
+    link: "https://www.amazon.com.br/CADEIRA-GAMER-PCYES-RACER-BLACK/dp/B097DZNM2L/ref=sr_1_2?adgrpid=126270421373&gclid=CjwKCAjwquWVBhBrEiwAt1KmwlrG4Jba8tzXGhgmNdSapXTYNZMC-wsrL3tA7TEqNR9I9uun5Zhe-hoCvcUQAvD_BwE&hvadid=595873728604&hvdev=c&hvlocphy=9101676&hvnetw=g&hvqmt=e&hvrand=2442668090348034953&hvtargid=kwd-449469480160&hydadcr=24160_13567617&keywords=mad+racer+v8&qid=1656388840&sr=8-2&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147",
   },
   {
     title: `Armário de cozinha chão.`,
     desc: `Balcão multiuso 70cm 100% mdf 2 portas c/tampo para cozinha Branco.
-	Aproximadamente 1 ano de uso.
-	Link para referência: https://www.americanas.com.br/produto/2975205372?pfm_type=card_pedido&pfm_page=detalhes_do_pedido&pfm_carac=minha_conta&pfm_pos=null&pfm_index=null`,
+	Aproximadamente 1 ano de uso.`,
     id: `armariocozinha`,
     price: 250,
     images: 3,
+    link: "https://www.americanas.com.br/produto/2975205372?pfm_type=card_pedido&pfm_page=detalhes_do_pedido&pfm_carac=minha_conta&pfm_pos=null&pfm_index=null",
   },
   {
     title: `Catefeira Dolce Gusto`,
     desc: `Modelo GENIO S PLUS.
-	Aproximadamente 1 ano e meio de uso.
-	Link referência:https://www.nescafe-dolcegusto.com.br/maquinas-cafe/genio-s-plus-preta-110v`,
+	Aproximadamente 1 ano e meio de uso.`,
     id: `cafeteira`,
     price: 400,
     images: 5,
+    link: "https://www.nescafe-dolcegusto.com.br/maquinas-cafe/genio-s-plus-preta-110v",
   },
   {
     title: `Geladeira BRM45 HKBNA EVOX`,
     desc: `Geladeira Duplex de 375L. Descascando na parte inferior da porta, conforme imagens
 
     Aproximadamente 1 Ano de uso
-    
-    Referência:
-    https://www.magazineluiza.com.br/geladeira-refrigerador-brastemp-frost-free-evox-duplex-375-litros-brm45-hkbna/p/218891700/ed/refr/`,
+    `,
     id: `geladeira`,
     price: 2000,
     images: 8,
+    link: "https://www.magazineluiza.com.br/geladeira-refrigerador-brastemp-frost-free-evox-duplex-375-litros-brm45-hkbna/p/218891700/ed/refr/",
   },
   {
     title: `Mesa de varanda`,
     desc: `Mesa de varanta redonda tampo de vidro (sem cadeiras).
-	Observação: 1 dos pés descascando'.
-	Link para referência: https://www.americanas.com.br/produto/78759985?epar=bp_pl_00_go_mv_pmax_geral&opn=YSMESP&WT.srch=1&offerId=5e47f2d779bf8430cbd10371&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGeyBphf4irDDiFD9LQi2vOa-XKkrACo_YMM0vh6Jk04ubuR0dTo3KhoCZYkQAvD_BwE&cor=Marrom%2FMarrom`,
+	Observação: 1 dos pés descascando'.`,
     id: `mesavaranda`,
     price: 100,
     images: 4,
+    link: "https://www.americanas.com.br/produto/78759985?epar=bp_pl_00_go_mv_pmax_geral&opn=YSMESP&WT.srch=1&offerId=5e47f2d779bf8430cbd10371&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGeyBphf4irDDiFD9LQi2vOa-XKkrACo_YMM0vh6Jk04ubuR0dTo3KhoCZYkQAvD_BwE&cor=Marrom%2FMarrom",
   },
   {
     title: `Weasy para cachorros de pequeno porte`,
     desc: `Banheiro para cachorros. Direto para o ralo. Com parede para cachorros machos
-
-    https://www.weasy.com.br/products/weasy-cao-banheiro-para-cachorro?variant=39760912908367
     `,
     id: `weasy`,
     price: 300,
     images: 4,
+    link: "https://www.weasy.com.br/products/weasy-cao-banheiro-para-cachorro?variant=39760912908367",
   },
   {
     title: `Escrivanina Escritório Modelo 1`,
@@ -188,6 +183,7 @@ export const ItemsDb: any[] = [
     
     Dimensões: Profundidade: 60cm / Largura: 110cm
     + prateleira retrátil teclado/mouse
+    + Bandeja para cabos na parte de trás (adaptada)
 
     Duas unidades.
     
@@ -195,8 +191,8 @@ export const ItemsDb: any[] = [
 
     Aproximadamente 3 anos`,
     id: `escrivaninhamodelo2`,
-    price: 0,
-    images: 4,
+    price: 130,
+    images: 0,
   },
   {
     title: `(TODO) Torradeira`,
@@ -337,12 +333,11 @@ export const ItemsDb: any[] = [
     Sem detalhes nos controles
 
     Obs: Não acompanha a modelo
-    
-    Referencia:
-    https://www.amazon.com.br/Oculus-PC-Powered-Gaming-Headset-Black/dp/B07PTMKYS7`,
+    `,
     id: `rift`,
     price: 2000,
     images: 4,
+    link: "https://www.amazon.com.br/Oculus-PC-Powered-Gaming-Headset-Black/dp/B07PTMKYS7",
   },
   {
     title: `(TODO) Desktop`,
@@ -442,13 +437,11 @@ export const ItemsDb: any[] = [
     Suporte para 32 cápsulas Dolce Gusto
 
     Sem detalhes
-
-    Referência:
-    https://www.amazon.com.br/Suporte-Porta-Cápsulas-Expresso-Cromado/dp/B07CN3WXTX/ref=asc_df_B076LGM73H/?tag=googleshopp06-20&linkCode=df0&hvadid=379723158603&hvpos=&hvnetw=g&hvrand=6243585778123210774&hvpone=&hvptwo=&hvqmt=&hvdev=m&hvdvcmdl=&hvlocint=&hvlocphy=9101696&hvtargid=pla-902596080911&psc=1&th=1
     `,
     id: `suportecapsulas`,
     price: 60,
     images: 4,
+    link: "https://www.amazon.com.br/Suporte-Porta-Cápsulas-Expresso-Cromado/dp/B07CN3WXTX/ref=asc_df_B076LGM73H/?tag=googleshopp06-20&linkCode=df0&hvadid=379723158603&hvpos=&hvnetw=g&hvrand=6243585778123210774&hvpone=&hvptwo=&hvqmt=&hvdev=m&hvdvcmdl=&hvlocint=&hvlocphy=9101696&hvtargid=pla-902596080911&psc=1&th=1",
   },
   {
     title: `(TODO) Placa decorativa`,
