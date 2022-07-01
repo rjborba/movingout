@@ -262,7 +262,7 @@ const Item: FC<any> = ({ item, setModalImagePath }) => {
 const Body: FC<any> = ({ setModalImagePath }) => {
   return (
     <Grid container spacing={5}>
-      {ItemsDb.filter((item) => !item.title?.includes("TODO")).map(
+      {ItemsDb.filter((item) => true || !item.title?.includes("TODO")).map(
         (item, i) => (
           <Grid key={`item-wrap-${i}`} item xs={12} md={6} lg={4}>
             <Item
