@@ -253,6 +253,7 @@ export const ItemsDb: any[] = [
     id: `escada`,
     price: 100,
     images: 4,
+    sold: true
   },
   {
     title: `(TODO) Lixeiras cromadas pequena`,
