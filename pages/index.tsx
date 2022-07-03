@@ -92,17 +92,18 @@ const DownIndicator = styled(KeyboardDoubleArrowDownIcon)({
 });
 
 const ImageModal: FC<any> = ({
-  modalImagePath,
+  selectedItem,
   open,
   onClose = () => undefined,
 }: {
-  modalImagePath: string;
+  selectedItem: any;
   open: boolean;
   onClose: () => any;
 }) => (
   <Modal open={open} onClose={onClose}>
     <Box
       sx={{
+        display: "flex",
         position: "absolute",
         top: "10%",
         bottom: "10%",
@@ -110,7 +111,7 @@ const ImageModal: FC<any> = ({
         right: "10%",
 
         bgcolor: "background.paper",
-        boxShadow: 12,
+        boxShadow: "4px 5px 24px -6px #000000",
         background: "black",
       }}
     >
@@ -126,12 +127,35 @@ const ImageModal: FC<any> = ({
       >
         <CloseIcon />
       </IconButton>
-      <Image objectFit="contain" layout="fill" src={modalImagePath} />
+      <Carousel
+        sx={{
+          flex: 1,
+        }}
+        autoPlay={false}
+        animation={"slide"}
+        navButtonsAlwaysVisible
+        cycleNavigation={false}
+      >
+        {Array(selectedItem?.images)
+          .fill(null)
+          .map((img, index) => (
+            <div key={`${selectedItem?.id}-image-modal`}>
+              <Image
+                objectFit="contain"
+                layout="fill"
+                src={`/${selectedItem?.id}/${index + 1}.jpeg`}
+              />
+            </div>
+          ))}
+      </Carousel>
     </Box>
+
+    {/* <Image objectFit="contain" layout="fill" src={modalImagePath} /> */}
+    {/* </Box> */}
   </Modal>
 );
 
-const RenderCarousel: FC<any> = ({ item, setModalImagePath }) => {
+const RenderCarousel: FC<any> = ({ item, setSelectedItem }) => {
   return (
     <Carousel
       height={500}
@@ -143,12 +167,15 @@ const RenderCarousel: FC<any> = ({ item, setModalImagePath }) => {
       {Array(item.images)
         .fill(null)
         .map((img, index) => (
-          <div style={{ height: "500px" }} key={`${item.id}-image-index`}>
+          <div
+            style={{ height: "500px", position: "relative" }}
+            key={`${item.id}-image-index`}
+          >
             <Image
               objectFit="cover"
               layout="fill"
               src={`/${item.id}/${index + 1}.jpeg`}
-              onClick={() => setModalImagePath(`/${item.id}/${index + 1}.jpeg`)}
+              onClick={() => setSelectedItem(item)}
             />
           </div>
         ))}
@@ -168,7 +195,7 @@ const RenderNoImagePlaceholder: FC = () => (
   </div>
 );
 
-const Item: FC<any> = ({ item, setModalImagePath }) => {
+const Item: FC<any> = ({ item, setSelectedItem }) => {
   const whatsappText = `Olá! Tenho interesse no item ${item.title}. Ainda está disponível?`;
 
   return (
@@ -201,7 +228,7 @@ const Item: FC<any> = ({ item, setModalImagePath }) => {
           </Box>
         )}
         {item.images > 0 ? (
-          <RenderCarousel item={item} setModalImagePath={setModalImagePath} />
+          <RenderCarousel item={item} setSelectedItem={setSelectedItem} />
         ) : (
           <RenderNoImagePlaceholder />
         )}
@@ -224,16 +251,7 @@ const Item: FC<any> = ({ item, setModalImagePath }) => {
             </Box>
           ) : null}
         </Box>
-        <Box mt={2}>
-          <Stack>
-            <Stack direction={"row"} spacing={1} alignItems="center">
-              <Typography variant="body1">
-                <b>Tempo de uso:</b>
-              </Typography>
-              <Typography variant="body1">1 ano</Typography>
-            </Stack>
-          </Stack>
-        </Box>
+        <Box mt={4} />
         {!item.sold && (
           <Link
             target={"_blank"}
@@ -259,32 +277,32 @@ const Item: FC<any> = ({ item, setModalImagePath }) => {
   );
 };
 
-const Body: FC<any> = ({ setModalImagePath }) => {
+const Body: FC<any> = ({ setSelectedItem }) => {
   return (
     <Grid container spacing={5}>
-      {ItemsDb.filter((item) => true || !item.title?.includes("TODO")).map(
-        (item, i) => (
-          <Grid key={`item-wrap-${i}`} item xs={12} md={6} lg={4}>
-            <Item
-              key={`item-${i}`}
-              item={item}
-              setModalImagePath={setModalImagePath}
-            />
-          </Grid>
-        )
-      )}
+      {ItemsDb.filter(
+        (item) => !item.hide /*true || !item.title?.includes("TODO")*/
+      ).map((item, i) => (
+        <Grid key={`item-wrap-${i}`} item xs={12} md={6} lg={4}>
+          <Item
+            key={`item-${i}`}
+            item={item}
+            setSelectedItem={setSelectedItem}
+          />
+        </Grid>
+      ))}
     </Grid>
   );
 };
 
 const Home: NextPage = () => {
-  const [modalImagePath, setModalImagePath] = useState(null);
-
+  const [selectedItem, setSelectedItem] = useState(null);
   return (
     <div>
       <HeaderSection aria-label="header-section">
         <ImageWrapper>
           <Image
+            priority
             objectFit="cover"
             objectPosition="0% 25%"
             layout="fill"
@@ -336,7 +354,7 @@ const Home: NextPage = () => {
       <BodySection aria-label="body-section">
         <Box pt={6} />
         <Container maxWidth="xl">
-          <Body setModalImagePath={setModalImagePath} />
+          <Body setSelectedItem={setSelectedItem} />
         </Container>
       </BodySection>
       <FooterSection>
@@ -388,9 +406,9 @@ const Home: NextPage = () => {
         </Box>
       </FooterSection>
       <ImageModal
-        modalImagePath={modalImagePath}
-        open={modalImagePath}
-        onClose={() => setModalImagePath(null)}
+        selectedItem={selectedItem}
+        open={!!selectedItem}
+        onClose={() => setSelectedItem(null)}
       />
     </div>
   );

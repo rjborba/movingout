@@ -87,6 +87,7 @@ export const ItemsDb: any[] = [
     id: `sofa`,
     price: 1400,
     images: 4,
+    sold: true,
     link: "",
   },
   {
@@ -100,7 +101,7 @@ export const ItemsDb: any[] = [
     link: "https://www.sony.com.br/electronics/support/televisions-projectors-lcd-tvs/kdl-48w655d/specifications",
   },
   {
-    title: `Cadeira Gamer (2 unidades)`,
+    title: `Cadeira Gamer`,
     desc: `Cadeira Gamer Mad Racer V8 Turbo PRETA
 
     Duas unidades disponíveis
@@ -116,9 +117,12 @@ export const ItemsDb: any[] = [
     link: "https://www.amazon.com.br/CADEIRA-GAMER-PCYES-RACER-BLACK/dp/B097DZNM2L/ref=sr_1_2?adgrpid=126270421373&gclid=CjwKCAjwquWVBhBrEiwAt1KmwlrG4Jba8tzXGhgmNdSapXTYNZMC-wsrL3tA7TEqNR9I9uun5Zhe-hoCvcUQAvD_BwE&hvadid=595873728604&hvdev=c&hvlocphy=9101676&hvnetw=g&hvqmt=e&hvrand=2442668090348034953&hvtargid=kwd-449469480160&hydadcr=24160_13567617&keywords=mad+racer+v8&qid=1656388840&sr=8-2&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147",
   },
   {
-    title: `Armário de cozinha chão.`,
-    desc: `Balcão multiuso 70cm 100% mdf 2 portas c/tampo para cozinha Branco.
-	Aproximadamente 1 ano de uso.`,
+    title: `Armário de chão de cozinha`,
+    desc: `Balcão multiuso 
+    
+    70cm 100% mdf 2 portas c/tampo para cozinha Branco.
+	  
+    Aproximadamente 1 ano de uso.`,
     id: `armariocozinha`,
     price: 250,
     images: 3,
@@ -147,7 +151,8 @@ export const ItemsDb: any[] = [
   {
     title: `Mesa de varanda`,
     desc: `Mesa de varanta redonda tampo de vidro (sem cadeiras).
-	Observação: 1 dos pés descascando'.`,
+	          
+          Obs: um dos pés descascando`,
     id: `mesavaranda`,
     price: 100,
     images: 4,
@@ -155,7 +160,10 @@ export const ItemsDb: any[] = [
   },
   {
     title: `Weasy para cachorros de pequeno porte`,
-    desc: `Banheiro para cachorros. Direto para o ralo. Com parede para cachorros machos
+    desc: `Banheiro para cachorros. 
+    Direto para o ralo. 
+    
+    Com parede para cachorros machos
     `,
     id: `weasy`,
     price: 300,
@@ -192,21 +200,25 @@ export const ItemsDb: any[] = [
     Aproximadamente 3 anos`,
     id: `escrivaninhamodelo2`,
     price: 130,
-    images: 0,
+    sold: true,
+    images: 2,
   },
   {
-    title: `(TODO) Torradeira`,
+    title: `Torradeira`,
     desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    id: `torradeira`,
+    price: 40,
+    images: 4,
   },
   {
-    title: `(TODO) Processador`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Processador`,
+    desc: `
+    Multi Mini Processador Mandine Fr Bowl Vidro-350w 110-127v
+    `,
+    id: `processador`,
+    price: 70,
+    images: 4,
+    link: "https://produto.mercadolivre.com.br/MLB-1426086588-multi-mini-processador-mandine-fr-bowl-vidro-350w-220v-_JM",
   },
   {
     title: `Móvel de apoio área de serviço preto`,
@@ -219,23 +231,21 @@ export const ItemsDb: any[] = [
     images: 4,
   },
   {
-    title: `Prateleiras pequenas`,
+    title: `Prateleira pequena`,
     desc: `
     Prateleira pequena branca 
     
     Dimensões:
-    Largura: 60cm / Profundidade: 20cm
-    
-    Obs: Preço por unidade`,
+    Largura: 60cm / Profundidade: 20cm`,
 
     id: `prateleirapequena`,
     price: 20,
     images: 4,
   },
   {
-    title: `Prateleira Grandes`,
+    title: `Prateleira Grande`,
     desc: `
-    Prateleira Grandes branca
+    Prateleira Grande branca
 
     Dimensões:
     Largura: 80cm / Profundidade: 25cm`,
@@ -253,70 +263,94 @@ export const ItemsDb: any[] = [
     id: `escada`,
     price: 100,
     images: 4,
-    sold: true
+    sold: true,
   },
   {
     title: `(TODO) Lixeiras cromadas pequena`,
+    hide: true,
     desc: ``,
     id: ``,
     price: 0,
     images: 0,
   },
   {
-    title: `(TODO) Lixeira cromada grande`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Lixeira cromada grande`,
+    desc: `Lixeira Tramontina Brasil com Pedal 12L Redonda Inox
+    
+    25.5 x 25.5 x 40 cm; 1.97 Quilogramas
+    `,
+    id: `lixeiracromadagrande`,
+    price: 70,
+    images: 2,
+    link: "https://www.amazon.com.br/Lixeira-Acabamento-Polido-Litros-Tramontina/dp/B01LYHLLV2/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=22TIP30OKIJ9V&keywords=lixeira%2B12l%2Btramontina&qid=1656810672&sprefix=lixeira%2B1l%2Btramontina%2Caps%2C171&sr=8-1&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12&th=1",
   },
   {
-    title: `(TODO) Organizadores pequenos`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Cesto de roupa (2 unidades)`,
+    desc: `Obs: Preço por duas unidades`,
+    id: `cestoderoupa`,
+    price: 40,
+    images: 4,
   },
   {
-    title: `(TODO) Tapete gelado de cachorro (NOVO)`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Tapete gelado de cachorro (NOVO)`,
+    desc: `Novo`,
+    id: `tapetegelado`,
+    price: 100,
+    images: 3,
   },
   {
-    title: `(TODO) Aspirador de pó`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    hide: true,
+    title: `Aspirador de pó`,
+    desc: `Aspirador de pó Mondial
+    
+    Várias marcas de uso. Entre em contato para mais detalhes
+    `,
+    id: `aspiradordepo`,
+    price: 50,
+    images: 1,
+    link: "https://produto.mercadolivre.com.br/MLB-1125532062-aspirador-de-po-arno-cyfo-ap55-cyclonic-force-1400w-110v-_JM",
   },
   {
-    title: `(TODO) Cama`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Cama box de casal Ortobom`,
+    desc: `
+    Cama Box. 4 anos de uso. Base separada
+    `,
+    id: `cama`,
+    price: 300,
+    images: 3,
   },
   {
-    title: `(TODO) Máquina de lavar`,
-    desc: ``,
-    id: ``,
+    title: `Máquina de lavar`,
+    desc: `Máquina de lavar LAC09. 
+    
+    Aproximadamente 4 anos de uso
+    
+    Necessita de manutenção. Nunca foi feita. Funciona normal. Com muito peso faz mais barulho`,
+    id: `maquinadelavar`,
     price: 0,
-    images: 0,
+    images: 4,
+    link: "https://www.buscape.com.br/lavadora-roupas/lavadora-electrolux-8-5kg-turbo-economia-lac09",
   },
   {
-    title: `(TODO) Bota Ortopédica`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Bota Ortopédica`,
+    desc: `Usada por 30 dias
+    
+    Longa
+    
+    Tamanho P`,
+    id: `botaortopedica`,
+    price: 70,
+    images: 3,
+    link: "https://hidrolight.com.br/product/bota-imobilizadora-comfort/",
   },
   {
-    title: `(TODO) Muletas`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Par de Muletas`,
+    desc: `Par de Muletas usadas por 30 dias.
+    
+    Sem marcas de uso`,
+    id: `muletas`,
+    price: 70,
+    images: 3,
   },
   {
     title: `Óculos Rift`,
@@ -355,18 +389,30 @@ export const ItemsDb: any[] = [
     images: 0,
   },
   {
-    title: `(TODO) Monitor Ultrawide LG`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Monitor Ultrawide LG 28"`,
+    desc: `Monitor Ultrawide LG 28"
+    
+    Aproximadamente 1 ano e meio de uso
+    
+    Sem detalhes
+    
+    Obs: O suporte articulado é vendido separadamente. O monitor vai com o suporte de mesa de fábria, conforme link de referência`,
+    id: `monitor`,
+    price: 1000,
+    images: 3,
+    link: "https://www.kabum.com.br/produto/157586/monitor-lg-led-29-ultrawide-full-hd-ips-amd-freesync-29wk600-w?srsltid=AQP2TeMFO1BXkf6X3PtpFmAh2lIhgG1R-BpEvOTNrcwAW5Wd7KNhuYsxxvU",
   },
   {
-    title: `(TODO) Suporte monitor articulado Elgr`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Suporte monitor articulado Elgr`,
+    desc: `Suporte monitor articulado Elgr 
+    
+    Menos de 1 ano de uso
+    
+    Sem detalhes`,
+    id: `suportearticulado`,
+    price: 135,
+    images: 3,
+    link: "https://www.elgstore.com.br/suporte-articulado-de-mesa-com-pistao-a-gas-para-monitores-de-17--a-27----f80n-elg/p?gclid=CjwKCAjw2f-VBhAsEiwAO4lNeDukrQNnikTWW2yNoMKHXDgx63pvZ7XsxCG3zBnxMOm2RD3sc0M66xoC-ukQAvD_BwE#",
   },
   {
     title: `Varal de teto`,
@@ -380,45 +426,57 @@ export const ItemsDb: any[] = [
     images: 5,
   },
   {
-    title: `(TODO) Organizadores modelo 2`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Organizadores modelo 2`,
+    desc: `
+    Organizadores maquiagem acrílico
+    4 peças
+    1 gaveteiro de 3 gavetas
+    1 porta batons 
+    1 gaveta base
+    1 peça para itens maiores e batons
+    `,
+    id: `organizador2`,
+    price: 70,
+    images: 3,
   },
   {
-    title: `(TODO) Mop vertical`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Mop vertical`,
+    desc: `
+    Mop vertical com aproximadamente 6 meses de uso.
+
+    Refil novo, ainda na embalagem
+    `,
+    id: `mop`,
+    price: 60,
+    images: 4,
   },
   {
-    title: `(TODO) Cestos de roupa suja`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Organizadores modelo 3`,
+    desc: `Kit de organizadores pretos de plástico de diversos tamanhos
+    
+    5 peças:
+    1 grande
+    2 médios
+    2 pequenos`,
+    id: `organizador3`,
+    price: 50,
+    images: 4,
   },
   {
-    title: `(TODO) Organizador 3`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Suportes para armário`,
+    desc: `Suportes para armário 
+    
+    2 suportes para xícaras
+    1 suporte para pratos`,
+    id: `suporteorganizador1`,
+    price: 40,
+    images: 6,
   },
   {
-    title: `(TODO) Suportes cromados`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
-  },
-  {
-    title: `(TODO) Porta temperos`,
-    desc: ``,
-    id: ``,
-    price: 0,
+    title: `Porta temperos`,
+    desc: `Porta tempero giratório cromado com 12 potes`,
+    id: `portatempero`,
+    price: 50,
     images: 0,
   },
   {
@@ -445,18 +503,18 @@ export const ItemsDb: any[] = [
     link: "https://www.amazon.com.br/Suporte-Porta-Cápsulas-Expresso-Cromado/dp/B07CN3WXTX/ref=asc_df_B076LGM73H/?tag=googleshopp06-20&linkCode=df0&hvadid=379723158603&hvpos=&hvnetw=g&hvrand=6243585778123210774&hvpone=&hvptwo=&hvqmt=&hvdev=m&hvdvcmdl=&hvlocint=&hvlocphy=9101696&hvtargid=pla-902596080911&psc=1&th=1",
   },
   {
-    title: `(TODO) Placa decorativa`,
+    title: `Placa decorativa`,
     desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    id: `placadecorativa`,
+    price: 25,
+    images: 2,
   },
   {
-    title: `(TODO) Garrafa de Café`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Garrafa de Café`,
+    desc: `Pouco usada`,
+    id: `garrafacafe`,
+    price: 15,
+    images: 1,
   },
   {
     title: `Kit Coqueteleira`,
@@ -482,13 +540,6 @@ export const ItemsDb: any[] = [
     images: 4,
   },
   {
-    title: `(TODO) Organizador 3`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
-  },
-  {
     title: `(TODO) Caixa de ferramentas`,
     desc: ``,
     id: ``,
@@ -496,16 +547,27 @@ export const ItemsDb: any[] = [
     images: 0,
   },
   {
-    title: `(TODO) Violão`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Violão`,
+    desc: `Violão clássico Di Giorgio
+    
+    Modelo ESTUDANTE N18
+    
+    Ano 2008
+    
+    Usado por aproximadamente 4 anos
+    
+    Excelente estado
+    
+    Obs: A imagem de referencia é do mesmo modelo, porém de outro ano. São semelhantes, não iguais`,
+    id: `violao`,
+    price: 350,
+    images: 3,
+    link: "https://digiorgio.com.br/violao-acustico-estudante-18-em-cordas-de-nylon-est18",
   },
   {
-    title: `(TODO) MOchila anti-furto`,
+    title: `(TODO) Mochila anti furto`,
     desc: ``,
-    id: ``,
+    id: `mochilaantifurto`,
     price: 0,
     images: 0,
   },
@@ -526,9 +588,9 @@ export const ItemsDb: any[] = [
   {
     title: `(TODO) Ventilador`,
     desc: ``,
-    id: ``,
+    id: `ventilador`,
     price: 0,
-    images: 0,
+    images: 3,
   },
   {
     title: `(TODO) Lampadas smart`,
@@ -559,33 +621,31 @@ export const ItemsDb: any[] = [
     images: 0,
   },
   {
-    title: `(TODO) Escova secadora`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
-  },
+    title: `Babyliss`,
+    desc: `Babyliss 
+    
+    Usado apenas duas vezes
 
-  {
-    title: `(TODO) Babyliss`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
-  },
-
-  {
-    title: `(TODO) Chapinha`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    Comprado em 2020
+    `,
+    id: `babyliss`,
+    price: 70,
+    images: 3,
+    link: "https://www.amazon.com.br/Modelador-1-Taiff-Curves-Preto/dp/B07F6LX5CC/ref=asc_df_B07F6LX5CC/?tag=googleshopp06-20&linkCode=df0&hvadid=379787127815&hvpos=&hvnetw=g&hvrand=4424209642660996801&hvpone=&hvptwo=&hvqmt=&hvdev=m&hvdvcmdl=&hvlocint=&hvlocphy=9101696&hvtargid=pla-810032713579&psc=1",
   },
   {
-    title: `(TODO) Organizadores de maquiagem acrílico`,
+    title: `Chapinha`,
     desc: ``,
-    id: ``,
-    price: 0,
+    id: `chapinha`,
+    price: 40,
+    images: 3,
+    link: "https://m.casasbahia.com.br/chapinha-prancha-taiff-classica-ceramica-180c-preto-bivolt-2266346/p/2266346?utm_medium=Cpc&utm_source=GP_PLA&IdSku=2266346&idLojista=10037&tipoLojista=1P&utm_campaign=rh_pmax_aposta_roi_bom&gbraid=0AAAAADtAamieoty52sTESbTuR6i1Y8yU7&gclid=Cj0KCQjwtvqVBhCVARIsAFUxcRu9C0uR-sRNUzgjqqfoKea2UGbMMEBCy6L6Lcaw9OGkCGK9-gcNAsMaAmo6EALw_wcB",
+  },
+  {
+    title: `(TODO) Caixa organizadora de plástico`,
+    desc: `Caixa organizadora grande de plástico com tampa`,
+    id: `caixaorganizadoragrande`,
+    price: 30,
     images: 0,
   },
 ];
