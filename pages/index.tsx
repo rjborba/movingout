@@ -75,6 +75,7 @@ const ImageWrapper = styled("div")({
 const StyledPaper = styled(Paper)(({ theme }) => ({
   backgroundColor: "black",
   position: "relative",
+  boxShadow: "3px 5px 17px -1px rgba(0,0,0,0.39)",
 }));
 
 const upAndDown = keyframes`
@@ -283,7 +284,7 @@ const Body: FC<any> = ({ setSelectedItem }) => {
       {ItemsDb.filter(
         (item) => !item.hide /*true || !item.title?.includes("TODO")*/
       ).map((item, i) => (
-        <Grid key={`item-wrap-${i}`} item xs={12} md={6} lg={4}>
+        <Grid key={`item-wrap-${i}`} item xs={12} sm={6} md={4} lg={3} xl={2}>
           <Item
             key={`item-${i}`}
             item={item}
@@ -353,7 +354,7 @@ const Home: NextPage = () => {
       </HeaderSection>
       <BodySection aria-label="body-section">
         <Box pt={6} />
-        <Container maxWidth="xl">
+        <Container maxWidth={false}>
           <Body setSelectedItem={setSelectedItem} />
         </Container>
       </BodySection>
