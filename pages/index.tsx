@@ -46,7 +46,7 @@ const BodySection = styled("section")({
 
   backgroundImage:
     "linear-gradient(to right top, #ffdf00, #ebe300, #d7e600, #c0e900, #a8eb12)",
-  borderTop: "6px solid black",
+  borderTop: "3px solid white",
   minHeight: "420px",
   paddingTop: "120px",
   paddingBottom: "64px",
@@ -75,7 +75,6 @@ const ImageWrapper = styled("div")({
 const StyledPaper = styled(Paper)(({ theme }) => ({
   backgroundColor: "black",
   position: "relative",
-  boxShadow: "3px 5px 17px -1px rgba(0,0,0,0.39)",
 }));
 
 const upAndDown = keyframes`
@@ -173,6 +172,7 @@ const RenderCarousel: FC<any> = ({ item, setSelectedItem }) => {
             key={`${item.id}-image-index`}
           >
             <Image
+              style={{ cursor: "pointer" }}
               objectFit="cover"
               layout="fill"
               src={`/${item.id}/${index + 1}.jpeg`}
@@ -200,7 +200,7 @@ const Item: FC<any> = ({ item, setSelectedItem }) => {
   const whatsappText = `Olá! Tenho interesse no item ${item.title}. Ainda está disponível?`;
 
   return (
-    <StyledPaper>
+    <StyledPaper elevation={8}>
       <Box mb={2}>
         {item.sold && (
           <Box
@@ -359,7 +359,12 @@ const Home: NextPage = () => {
         </Container>
       </BodySection>
       <FooterSection>
-        <Stack direction={"row"} spacing={2}>
+        <Stack
+          direction={"row"}
+          gap={2}
+          flexWrap="wrap"
+          justifyContent="center"
+        >
           <Link
             underline="none"
             color="white"

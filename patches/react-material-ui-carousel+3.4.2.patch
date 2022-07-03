@@ -1,0 +1,17 @@
+diff --git a/node_modules/react-material-ui-carousel/dist/components/CarouselItem.js b/node_modules/react-material-ui-carousel/dist/components/CarouselItem.js
+index e81c4d3..f4e5cbc 100644
+--- a/node_modules/react-material-ui-carousel/dist/components/CarouselItem.js
++++ b/node_modules/react-material-ui-carousel/dist/components/CarouselItem.js
+@@ -42,7 +42,11 @@ var CarouselItem = function (_a) {
+         drag: 'x',
+         layout: true,
+         onDragEnd: function (event, info) {
+-            if (!swipe)
++            // code added
++            const pX = info.offset.x * info.offset.x;
++            const pY = info.offset.y * info.offset.y;
++            
++            if (!swipe || pX < 300 || pX < pY)
+                 return;
+             if (info.offset.x > 0)
+                 prev && prev();
