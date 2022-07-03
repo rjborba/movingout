@@ -295,7 +295,7 @@ export const ItemsDb: any[] = [
     title: `Tapete gelado para cachorros - novo`,
     desc: ``,
     id: `tapetegelado`,
-    price: 100,
+    price: 50,
     images: 3,
   },
   {
@@ -327,7 +327,7 @@ export const ItemsDb: any[] = [
     
     Necessita de manutenção. Nunca foi feita. Funciona normal. Com muito peso faz mais barulho`,
     id: `maquinadelavar`,
-    price: 0,
+    price: 450,
     images: 4,
     link: "https://www.buscape.com.br/lavadora-roupas/lavadora-electrolux-8-5kg-turbo-economia-lac09",
   },
@@ -494,12 +494,12 @@ export const ItemsDb: any[] = [
     images: 6,
   },
   {
-    hide: true,
     title: `Porta temperos`,
     desc: `Porta tempero giratório cromado com 12 potes`,
     id: `portatempero`,
-    price: 50,
-    images: 0,
+    price: 75,
+    images: 2,
+    link: "https://www.americanas.com.br/produto/3936817341?epar=bp_pl_00_go_ud_pmax_geral&opn=YSMESP&WT.srch=1&offerId=6146459409c351890dbcd21f&gbraid=0AAAAAD37VprnczBTg_ARILdQDJIc_zkxj&gclid=CjwKCAjw_ISWBhBkEiwAdqxb9ovP1jwHo3ZfydJgr-mkfWgyYQFJMh_O5UFltjNsvkYHX9CpjA08_hoC5ssQAvD_BwE",
   },
   {
     title: `Vasos Decorativos`,
@@ -633,6 +633,7 @@ export const ItemsDb: any[] = [
     title: `Lampadas smart`,
     desc: ``,
     id: ``,
+    hide: true,
     price: 0,
     images: 0,
   },

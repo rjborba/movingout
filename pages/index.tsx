@@ -27,8 +27,6 @@ import Image from "next/image";
 import { FC, useState } from "react";
 import { ItemsDb } from "../ItemsDb";
 
-import LoadingImage from "../loading.png";
-
 const HeaderSection = styled("section")({
   position: "relative",
   height: "100vh",
@@ -288,15 +286,27 @@ const Body: FC<any> = ({ setSelectedItem }) => {
     <Grid container spacing={5}>
       {ItemsDb.filter(
         (item) => !item.hide /*true || !item.title?.includes("TODO")*/
-      ).map((item, i) => (
-        <Grid key={`item-wrap-${i}`} item xs={12} sm={6} md={4} lg={3} xl={2}>
-          <Item
-            key={`item-${i}`}
-            item={item}
-            setSelectedItem={setSelectedItem}
-          />
-        </Grid>
-      ))}
+      )
+        .sort((itemA, itemB) => (itemA.price < itemB.price ? 1 : -1))
+        .sort((itemA, itemB) => {
+          if (itemA.sold && !itemB.sold) {
+            return 1;
+          }
+          if (itemB.sold && !itemA.sold) {
+            return -1;
+          } else {
+            return 0;
+          }
+        })
+        .map((item, i) => (
+          <Grid key={`item-wrap-${i}`} item xs={12} sm={6} md={4} lg={3} xl={2}>
+            <Item
+              key={`item-${i}`}
+              item={item}
+              setSelectedItem={setSelectedItem}
+            />
+          </Grid>
+        ))}
     </Grid>
   );
 };
