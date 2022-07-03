@@ -27,6 +27,8 @@ import Image from "next/image";
 import { FC, useState } from "react";
 import { ItemsDb } from "../ItemsDb";
 
+import LoadingImage from "../loading.png";
+
 const HeaderSection = styled("section")({
   position: "relative",
   height: "100vh",
@@ -173,6 +175,8 @@ const RenderCarousel: FC<any> = ({ item, setSelectedItem }) => {
             key={`${item.id}-image-index`}
           >
             <Image
+              placeholder="blur"
+              blurDataURL="./loading.png"
               style={{ cursor: "pointer" }}
               objectFit="cover"
               layout="fill"

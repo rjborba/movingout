@@ -85,7 +85,7 @@ export const ItemsDb: any[] = [
     
     O forro de baixo está rasgado, porém não é visível`,
     id: `sofa`,
-    price: 1400,
+    price: 1300,
     images: 4,
     sold: true,
     link: "",
@@ -292,8 +292,8 @@ export const ItemsDb: any[] = [
     images: 4,
   },
   {
-    title: `Tapete gelado de cachorro (NOVO)`,
-    desc: `Novo`,
+    title: `Tapete gelado para cachorros - novo`,
+    desc: ``,
     id: `tapetegelado`,
     price: 100,
     images: 3,
@@ -375,18 +375,39 @@ export const ItemsDb: any[] = [
     link: "https://www.amazon.com.br/Oculus-PC-Powered-Gaming-Headset-Black/dp/B07PTMKYS7",
   },
   {
-    title: `(TODO) Desktop`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Desktop Gamer 2016`,
+    desc: `
+    • Gabinete Azza
+
+    • Fonte PCYes ATX 600W Reais Electro Séries 80 Plus Bronze 22019
+
+    • HD WD SATA 3,5 Blue PC 1TB 7200RPM 64MB Cache SATA 6.0Gb/s - WD10EZEX
+
+    • SSD Kingston HyperX Fury 2.5 120GB SATA III 6Gb/s Leitura/Gravação Máxima até 4K - SHFS37A/120G
+
+    • Memória Kingston HyperX FURY 8GB 1600Mhz DDR3 CL10 Red Series - HX316C10FR/8
+
+    • Placa de Vídeo VGA Galax GeForce GTX 970 Gamer OC 4GB DDR5 256 bit PCI-Express 3.0 97NPH6DT8RVZ
+
+    • Placa-Mãe GIGABYTE p/ Intel LGA 1151 mATX GA-H110M-H DDR3, HDMI, Dual UEFI BIOS,SATA 6Gb/s ,USB 3.0, LAN Gbe, Áudio HD 7.1
+
+    • Cooler para Processador Cooler Master HYPER H411R, 92mm
+
+    • Bluetooth USB adapter
+
+    • Processador Intel Core i5-6600 SKYLAKE 3.3GHz Cache 6MB, LGA 1151, BX80662I56600 - BOX
+    `,
+    id: `desktop`,
+    price: 999,
+    images: 5,
   },
   {
-    title: `(TODO) Joystick X52`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Joystick X52`,
+    desc: `Sem detalhes. 100% funcional. Pouco usado`,
+    id: `x52`,
+    price: 800,
+    images: 6,
+    link: "https://www.logitechg.com/pt-br/products/space/x52-space-flight-simulator-controller.945-000025.html",
   },
   {
     title: `Monitor Ultrawide LG 28"`,
@@ -540,11 +561,12 @@ export const ItemsDb: any[] = [
     images: 4,
   },
   {
-    title: `(TODO) Caixa de ferramentas`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Caixa de ferramentas com items diversos`,
+    desc: `
+    Caixa de ferramenta com diversos items conforme imagens`,
+    id: `caixadeferramentas`,
+    price: 90,
+    images: 8,
   },
   {
     title: `Violão`,
@@ -572,22 +594,30 @@ export const ItemsDb: any[] = [
     images: 0,
   },
   {
-    title: `(TODO) Mini-retifica`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Mini-retifica`,
+    desc: `Pouco usada. Quase todos os discos intactos`,
+    id: `retifica`,
+    price: 120,
+    images: 5,
+    link: "https://www.lojadomecanico.com.br/produto/99594/21/226/kit-micro-retifica-com-controle-de-torque-180w-110v-com-113-pecas-blackdecker-rt18ka#",
   },
   {
-    title: `(TODO) Parafusadeira/furadeira elétrica`,
-    desc: ``,
-    id: ``,
-    price: 0,
-    images: 0,
+    title: `Parafusadeira/furadeira elétrica de impacto`,
+    desc: `Obs: Uma das brocas não está presente. Algumas peças apresentam leve sinais de ferrugem.
+
+    Funciona perfeitamente. Pouco usada`,
+    id: `parafusadeira`,
+    price: 120,
+    images: 4,
+    link: "https://www.casasbahia.com.br/Ferramentas/FerramentasEletricas/Parafusadeiras/furadeira-parafusadeira-a-bateria-de-litio-philco-ppf03mf-com-mandril-3-8-12v-e-maleta-com-50-acessorios-55000005.html?IdSku=55000005",
   },
   {
-    title: `(TODO) Ventilador`,
-    desc: ``,
+    title: `Ventilador`,
+    desc: `Doação. 
+    
+    Não altera o angulo vertical. 
+    
+    Algumas marcas de mordida de cachorro. Funciona normal`,
     id: `ventilador`,
     price: 0,
     images: 3,
@@ -600,11 +630,15 @@ export const ItemsDb: any[] = [
     images: 0,
   },
   {
-    title: `(TODO) Joystick Sidewinder ForceFeedback 2`,
-    desc: ``,
-    id: ``,
+    title: `Joystick Sidewinder ForceFeedback 2`,
+    desc: `
+    Mais de década de uso. Várias marcas de uso. Funciona. 
+    
+    Doação
+    `,
+    id: `sidewinder`,
     price: 0,
-    images: 0,
+    images: 3,
   },
   {
     title: `(TODO) Corda de pular`,
@@ -642,10 +676,10 @@ export const ItemsDb: any[] = [
     link: "https://m.casasbahia.com.br/chapinha-prancha-taiff-classica-ceramica-180c-preto-bivolt-2266346/p/2266346?utm_medium=Cpc&utm_source=GP_PLA&IdSku=2266346&idLojista=10037&tipoLojista=1P&utm_campaign=rh_pmax_aposta_roi_bom&gbraid=0AAAAADtAamieoty52sTESbTuR6i1Y8yU7&gclid=Cj0KCQjwtvqVBhCVARIsAFUxcRu9C0uR-sRNUzgjqqfoKea2UGbMMEBCy6L6Lcaw9OGkCGK9-gcNAsMaAmo6EALw_wcB",
   },
   {
-    title: `(TODO) Caixa organizadora de plástico`,
+    title: `Caixa organizadora de plástico`,
     desc: `Caixa organizadora grande de plástico com tampa`,
     id: `caixaorganizadoragrande`,
     price: 30,
-    images: 0,
+    images: 4,
   },
 ];
