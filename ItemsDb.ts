@@ -494,6 +494,7 @@ export const ItemsDb: any[] = [
     images: 6,
   },
   {
+    hide: true,
     title: `Porta temperos`,
     desc: `Porta tempero giratório cromado com 12 potes`,
     id: `portatempero`,
@@ -579,19 +580,25 @@ export const ItemsDb: any[] = [
     Usado por aproximadamente 4 anos
     
     Excelente estado
+
+    Acompanha capa (com marcas de uso)
     
     Obs: A imagem de referencia é do mesmo modelo, porém de outro ano. São semelhantes, não iguais`,
     id: `violao`,
     price: 350,
-    images: 3,
+    images: 4,
     link: "https://digiorgio.com.br/violao-acustico-estudante-18-em-cordas-de-nylon-est18",
   },
   {
-    title: `(TODO) Mochila anti furto`,
-    desc: ``,
+    title: `Mochila Anti Furto`,
+    desc: `
+    Possui algumas marcas de uso
+    
+    Obs: Não achei o link para o mesmo produto. O link de referência é para uma parecida`,
     id: `mochilaantifurto`,
-    price: 0,
-    images: 0,
+    price: 50,
+    link: "https://www.amazon.com.br/Mochila-Swiss-Move-Notebook-Us2afpt/dp/B07QW21HJJ",
+    images: 7,
   },
   {
     title: `Mini-retifica`,
@@ -613,7 +620,7 @@ export const ItemsDb: any[] = [
   },
   {
     title: `Ventilador`,
-    desc: `Doação. 
+    desc: `0800 
     
     Não altera o angulo vertical. 
     
@@ -623,7 +630,7 @@ export const ItemsDb: any[] = [
     images: 3,
   },
   {
-    title: `(TODO) Lampadas smart`,
+    title: `Lampadas smart`,
     desc: ``,
     id: ``,
     price: 0,
@@ -634,25 +641,35 @@ export const ItemsDb: any[] = [
     desc: `
     Mais de década de uso. Várias marcas de uso. Funciona. 
     
-    Doação
+    0800
     `,
     id: `sidewinder`,
     price: 0,
     images: 3,
   },
   {
-    title: `(TODO) Corda de pular`,
-    desc: ``,
-    id: ``,
+    title: `Corda de academia`,
+    desc: `
+    De metal. Rolamento precisa ser lubrificado
+
+    0800
+    `,
+    id: `corda`,
     price: 0,
-    images: 0,
+    images: 3,
   },
   {
-    title: `(TODO) Luva Box`,
-    desc: ``,
-    id: ``,
+    title: `Luva Box`,
+    desc: `
+    0800
+
+    Couro descascando
+
+    Usada por 6 meses e depois ficou guardada por 4 anos
+    `,
+    id: `luva`,
     price: 0,
-    images: 0,
+    images: 1,
   },
   {
     title: `Babyliss`,
