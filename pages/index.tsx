@@ -158,6 +158,7 @@ const ImageModal: FC<any> = ({
 const RenderCarousel: FC<any> = ({ item, setSelectedItem }) => {
   return (
     <Carousel
+      swipe={false}
       height={500}
       autoPlay={false}
       animation={"slide"}
