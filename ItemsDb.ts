@@ -146,6 +146,7 @@ export const ItemsDb: any[] = [
     link: "https://www.nescafe-dolcegusto.com.br/maquinas-cafe/genio-s-plus-preta-110v",
   },
   {
+    sold: true,
     title: `Geladeira BRM45 HKBNA EVOX`,
     desc: `Geladeira Duplex de 375L. Descascando na parte inferior da porta, conforme imagens
 
@@ -332,6 +333,7 @@ export const ItemsDb: any[] = [
     link: "https://produto.mercadolivre.com.br/MLB-1125532062-aspirador-de-po-arno-cyfo-ap55-cyclonic-force-1400w-110v-_JM",
   },
   {
+    sold: true,
     title: `Cama box de casal Ortobom`,
     desc: `
     Cama Box. 4 anos de uso. Base separada
