@@ -8,6 +8,7 @@ export const ItemsDb: any[] = [
     link: "https://www.madeiramadeira.com.br/aparador-buffet-retro-90-rustik-carvalho-amarelo-ac-4491391.html?origem=pla-4491391&utm_source=google&utm_medium=cpc&utm_content=buffet-771&utm_term=&utm_id=17289802545&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGT8-DE55S-WIVn7fJxZfdMtkFPjZkiTHBp09xiD5DqmfaCt6ZMniIhoCPYMQAvD_BwE",
   },
   {
+    sold: true,
     title: `Conjunto Sala de Jantar`,
     desc: `Mesa Tampo de Madeira com 4 Cadeiras.
 	Aproximadamente 2 anos e meio de uso.`,
@@ -17,6 +18,7 @@ export const ItemsDb: any[] = [
     link: "https://loja.madesa.com/conjunto-sala-de-jantar-madesa-talita-mesa-tampo-de-madeira-com-4-cadeiras-rustic-crema-bege-marrom/p?_sgm_campaign=scn_9bb971a75a000&_sgm_source=737&_sgm_action=click",
   },
   {
+    sold: true,
     title: `Mesa retractil de parede`,
     desc: `Mesa retractil para parede. 4 furos
 	Aproximadamente 2 anos e meio de uso.`,
@@ -25,6 +27,7 @@ export const ItemsDb: any[] = [
     images: 4,
   },
   {
+    sold: true,
     title: `Microondas`,
     desc: `Micro-ondas Consul Cmo20 Espelhado 20 Litros Prata. 
 	Aproximadamente 1 ano de uso.`,
@@ -34,6 +37,7 @@ export const ItemsDb: any[] = [
     link: "https://www.americanas.com.br/produto/5208702685?epar=bp_pl_00_go_ed_pmax_forno_fogao_cooktop&opn=YSMESP&WT.srch=1&offerId=629809c5234ca7e6fd9c956b&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGVaRjjqrD9wqMn7ZQI2ELAh6WuWdvVpKObOejg5Lx5BMJqh47NNV7RoC3ycQAvD_BwE&cor=Preta&voltagem=127%20v",
   },
   {
+    sold: true,
     title: `Fogão 4 Bocas Müeller Fratello Vetro`,
     desc: `Aproximadamente 1 ano de uso.`,
     id: `fogao`,
@@ -42,6 +46,7 @@ export const ItemsDb: any[] = [
     link: "https://www.bemol.com.br/fogao-4-bocas-mueller-fratello-preto-p1074150?tsid=16&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGdh3AOF_eh3irHWws6NN9PajXZKHGamb4Dbe6t2jxoGWXnRSvmSdzBoCCo8QAvD_BwE",
   },
   {
+    sold: true,
     title: `Alexa`,
     desc: `Echo Dot (4ª Geração): Smart Speaker com Alexa - Cor Preta
 	Aproximadamente 1 ano de uso.`,
@@ -59,6 +64,7 @@ export const ItemsDb: any[] = [
     images: 5,
   },
   {
+    sold: true,
     title: `Air Fryer 3.2 L`,
     desc: `Air Fryer MAXIS 3.2L
       2 anos de uso`,
@@ -91,6 +97,7 @@ export const ItemsDb: any[] = [
     link: "",
   },
   {
+    sold: true,
     title: `TV Sony Bravia 48 polegadas`,
     desc: `Modelo 48W655D
     
@@ -129,7 +136,8 @@ export const ItemsDb: any[] = [
     link: "https://www.americanas.com.br/produto/2975205372?pfm_type=card_pedido&pfm_page=detalhes_do_pedido&pfm_carac=minha_conta&pfm_pos=null&pfm_index=null",
   },
   {
-    title: `Catefeira Dolce Gusto`,
+    sold: true,
+    title: `Cafeteira Dolce Gusto`,
     desc: `Modelo GENIO S PLUS.
 	Aproximadamente 1 ano e meio de uso.`,
     id: `cafeteira`,
@@ -171,6 +179,7 @@ export const ItemsDb: any[] = [
     link: "https://www.weasy.com.br/products/weasy-cao-banheiro-para-cachorro?variant=39760912908367",
   },
   {
+    sold: true,
     title: `Escrivanina Escritório Modelo 1`,
     desc: `Escrivanina Escritório Modelo 1
 
@@ -266,7 +275,8 @@ export const ItemsDb: any[] = [
     sold: true,
   },
   {
-    title: `(TODO) Lixeiras cromadas pequena`,
+    sold: true,
+    title: `(TODO) Lixeiras cromadas pequena (1)`,
     hide: true,
     desc: ``,
     id: ``,
@@ -274,6 +284,15 @@ export const ItemsDb: any[] = [
     images: 0,
   },
   {
+    title: `(TODO) Lixeiras cromadas pequena (2)`,
+    hide: true,
+    desc: ``,
+    id: ``,
+    price: 0,
+    images: 0,
+  },
+  {
+    sold: true,
     title: `Lixeira cromada grande`,
     desc: `Lixeira Tramontina Brasil com Pedal 12L Redonda Inox
     
@@ -299,6 +318,7 @@ export const ItemsDb: any[] = [
     images: 3,
   },
   {
+    sold: true,
     hide: true,
     title: `Aspirador de pó`,
     desc: `Aspirador de pó Mondial
@@ -320,6 +340,7 @@ export const ItemsDb: any[] = [
     images: 3,
   },
   {
+    sold: true,
     title: `Máquina de lavar`,
     desc: `Máquina de lavar LAC09. 
     
@@ -375,6 +396,7 @@ export const ItemsDb: any[] = [
     link: "https://www.amazon.com.br/Oculus-PC-Powered-Gaming-Headset-Black/dp/B07PTMKYS7",
   },
   {
+    sold: true,
     title: `Desktop Gamer 2016`,
     desc: `
     • Gabinete Azza
@@ -410,6 +432,7 @@ export const ItemsDb: any[] = [
     link: "https://www.logitechg.com/pt-br/products/space/x52-space-flight-simulator-controller.945-000025.html",
   },
   {
+    sold: true,
     title: `Monitor Ultrawide LG 28"`,
     desc: `Monitor Ultrawide LG 28"
     
@@ -424,6 +447,7 @@ export const ItemsDb: any[] = [
     link: "https://www.kabum.com.br/produto/157586/monitor-lg-led-29-ultrawide-full-hd-ips-amd-freesync-29wk600-w?srsltid=AQP2TeMFO1BXkf6X3PtpFmAh2lIhgG1R-BpEvOTNrcwAW5Wd7KNhuYsxxvU",
   },
   {
+    sold: true,
     title: `Suporte monitor articulado Elgr`,
     desc: `Suporte monitor articulado Elgr 
     
@@ -461,6 +485,7 @@ export const ItemsDb: any[] = [
     images: 3,
   },
   {
+    sold: true,
     title: `Mop vertical`,
     desc: `
     Mop vertical com aproximadamente 6 meses de uso.
@@ -494,6 +519,7 @@ export const ItemsDb: any[] = [
     images: 6,
   },
   {
+    sold: true,
     title: `Porta temperos`,
     desc: `Porta tempero giratório cromado com 12 potes`,
     id: `portatempero`,
@@ -502,6 +528,7 @@ export const ItemsDb: any[] = [
     link: "https://www.americanas.com.br/produto/3936817341?epar=bp_pl_00_go_ud_pmax_geral&opn=YSMESP&WT.srch=1&offerId=6146459409c351890dbcd21f&gbraid=0AAAAAD37VprnczBTg_ARILdQDJIc_zkxj&gclid=CjwKCAjw_ISWBhBkEiwAdqxb9ovP1jwHo3ZfydJgr-mkfWgyYQFJMh_O5UFltjNsvkYHX9CpjA08_hoC5ssQAvD_BwE",
   },
   {
+    sold: true,
     title: `Vasos Decorativos`,
     desc: `Vasos Decorativos brancos para pequenas plantas
     
@@ -513,6 +540,7 @@ export const ItemsDb: any[] = [
     images: 2,
   },
   {
+    sold: true,
     title: `Suporte para cápsulas + caixinha para cápsulas de brinde`,
     desc: `
     Suporte para 32 cápsulas Dolce Gusto
@@ -551,6 +579,7 @@ export const ItemsDb: any[] = [
     images: 4,
   },
   {
+    sold: true,
     title: `Kit copos`,
     desc: `Kit de copos
     
@@ -562,6 +591,7 @@ export const ItemsDb: any[] = [
     images: 4,
   },
   {
+    sold: true,
     title: `Caixa de ferramentas com items diversos`,
     desc: `
     Caixa de ferramenta com diversos items conforme imagens`,
@@ -601,6 +631,7 @@ export const ItemsDb: any[] = [
     images: 7,
   },
   {
+    sold: true,
     title: `Mini-retifica`,
     desc: `Pouco usada. Quase todos os discos intactos`,
     id: `retifica`,
@@ -609,6 +640,7 @@ export const ItemsDb: any[] = [
     link: "https://www.lojadomecanico.com.br/produto/99594/21/226/kit-micro-retifica-com-controle-de-torque-180w-110v-com-113-pecas-blackdecker-rt18ka#",
   },
   {
+    sold: true,
     title: `Parafusadeira/furadeira elétrica de impacto`,
     desc: `Obs: Uma das brocas não está presente. Algumas peças apresentam leve sinais de ferrugem.
 
@@ -619,6 +651,7 @@ export const ItemsDb: any[] = [
     link: "https://www.casasbahia.com.br/Ferramentas/FerramentasEletricas/Parafusadeiras/furadeira-parafusadeira-a-bateria-de-litio-philco-ppf03mf-com-mandril-3-8-12v-e-maleta-com-50-acessorios-55000005.html?IdSku=55000005",
   },
   {
+    sold: true,
     title: `Ventilador`,
     desc: `0800 
     
@@ -649,6 +682,7 @@ export const ItemsDb: any[] = [
     images: 3,
   },
   {
+    sold: true,
     title: `Corda de academia`,
     desc: `
     De metal. Rolamento precisa ser lubrificado
@@ -660,6 +694,8 @@ export const ItemsDb: any[] = [
     images: 3,
   },
   {
+    sold: true,
+
     title: `Luva Box`,
     desc: `
     0800
@@ -673,6 +709,7 @@ export const ItemsDb: any[] = [
     images: 1,
   },
   {
+    sold: true,
     title: `Babyliss`,
     desc: `Babyliss 
     
