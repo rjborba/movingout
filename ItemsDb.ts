@@ -157,6 +157,7 @@ export const ItemsDb: any[] = [
     link: "https://www.magazineluiza.com.br/geladeira-refrigerador-brastemp-frost-free-evox-duplex-375-litros-brm45-hkbna/p/218891700/ed/refr/",
   },
   {
+    sold: true,
     title: `Mesa de varanda`,
     desc: `Mesa de varanta redonda tampo de vidro (sem cadeiras).
 	          
@@ -671,6 +672,7 @@ export const ItemsDb: any[] = [
     images: 0,
   },
   {
+    sold: true,
     title: `Joystick Sidewinder ForceFeedback 2`,
     desc: `
     Mais de década de uso. Várias marcas de uso. Funciona. 
