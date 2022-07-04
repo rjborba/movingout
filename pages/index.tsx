@@ -259,7 +259,7 @@ const Item: FC<any> = ({ item, setSelectedItem }) => {
         {!item.sold && (
           <Link
             target={"_blank"}
-            href={`https://api.whatsapp.com/send?phone=+5581999995304&text=%20${whatsappText}`}
+            href={`https://api.whatsapp.com/send?phone=+5592981246446&text=%20${whatsappText}`}
           >
             <Button
               variant="contained"
