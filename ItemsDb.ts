@@ -215,6 +215,7 @@ export const ItemsDb: any[] = [
     images: 2,
   },
   {
+    sold: true,
     title: `Torradeira`,
     desc: ``,
     id: `torradeira`,
@@ -232,6 +233,7 @@ export const ItemsDb: any[] = [
     link: "https://produto.mercadolivre.com.br/MLB-1426086588-multi-mini-processador-mandine-fr-bowl-vidro-350w-220v-_JM",
   },
   {
+    sold: true,
     title: `Móvel de apoio área de serviço preto`,
     desc: `Móvel de apoio área de serviço com 5 prateleiras
     
