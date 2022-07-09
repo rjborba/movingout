@@ -1,5 +1,6 @@
 export const ItemsDb: any[] = [
   {
+    sold: true,
     title: `Aparador Buffet Retrô 90 Rustik Carvalho/Amarelo`,
     desc: `Aproximadamente 1 ano de uso.`,
     id: `armariocafe`,
@@ -86,6 +87,7 @@ export const ItemsDb: any[] = [
     link: "https://www.amazon.com.br/gp/product/B078S8GX9Q/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&th=1",
   },
   {
+    sold: true,
     title: `Sofá 4 lugares`,
     desc: `Sofá 4 lugares sob incomenda retratil + duas almofadas de costas na mesma cor
     
@@ -93,11 +95,10 @@ export const ItemsDb: any[] = [
     id: `sofa`,
     price: 1300,
     images: 4,
-    sold: true,
     link: "",
   },
   {
-    sold: true,
+    sold: false,
     title: `TV Sony Bravia 48 polegadas`,
     desc: `Modelo 48W655D
     
@@ -124,6 +125,7 @@ export const ItemsDb: any[] = [
     link: "https://www.amazon.com.br/CADEIRA-GAMER-PCYES-RACER-BLACK/dp/B097DZNM2L/ref=sr_1_2?adgrpid=126270421373&gclid=CjwKCAjwquWVBhBrEiwAt1KmwlrG4Jba8tzXGhgmNdSapXTYNZMC-wsrL3tA7TEqNR9I9uun5Zhe-hoCvcUQAvD_BwE&hvadid=595873728604&hvdev=c&hvlocphy=9101676&hvnetw=g&hvqmt=e&hvrand=2442668090348034953&hvtargid=kwd-449469480160&hydadcr=24160_13567617&keywords=mad+racer+v8&qid=1656388840&sr=8-2&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147",
   },
   {
+    sold: true,
     title: `Armário de chão de cozinha`,
     desc: `Balcão multiuso 
     
@@ -169,6 +171,7 @@ export const ItemsDb: any[] = [
     link: "https://www.americanas.com.br/produto/78759985?epar=bp_pl_00_go_mv_pmax_geral&opn=YSMESP&WT.srch=1&offerId=5e47f2d779bf8430cbd10371&gclid=CjwKCAjwh-CVBhB8EiwAjFEPGeyBphf4irDDiFD9LQi2vOa-XKkrACo_YMM0vh6Jk04ubuR0dTo3KhoCZYkQAvD_BwE&cor=Marrom%2FMarrom",
   },
   {
+    sold: true,
     title: `Weasy para cachorros de pequeno porte`,
     desc: `Banheiro para cachorros. 
     Direto para o ralo. 
@@ -289,10 +292,10 @@ export const ItemsDb: any[] = [
   },
   {
     title: `(TODO) Lixeiras cromadas pequena (2)`,
-    hide: true,
-    desc: ``,
-    id: ``,
-    price: 0,
+    hide: false,
+    desc: `Lixeira cromada pequena`,
+    id: `lixeiracromadapequena`,
+    price: 25,
     images: 0,
   },
   {
@@ -315,6 +318,7 @@ export const ItemsDb: any[] = [
     images: 4,
   },
   {
+    sold: true,
     title: `Tapete gelado para cachorros - novo`,
     desc: ``,
     id: `tapetegelado`,
@@ -323,7 +327,6 @@ export const ItemsDb: any[] = [
   },
   {
     sold: true,
-    hide: true,
     title: `Aspirador de pó`,
     desc: `Aspirador de pó Mondial
     
@@ -572,6 +575,7 @@ export const ItemsDb: any[] = [
     images: 1,
   },
   {
+    sold: true,
     title: `Kit Coqueteleira`,
     desc: `Kit Coqueteleira
     
@@ -605,6 +609,7 @@ export const ItemsDb: any[] = [
     images: 8,
   },
   {
+    sold: true,
     title: `Violão`,
     desc: `Violão clássico Di Giorgio
     
@@ -737,6 +742,7 @@ export const ItemsDb: any[] = [
     link: "https://m.casasbahia.com.br/chapinha-prancha-taiff-classica-ceramica-180c-preto-bivolt-2266346/p/2266346?utm_medium=Cpc&utm_source=GP_PLA&IdSku=2266346&idLojista=10037&tipoLojista=1P&utm_campaign=rh_pmax_aposta_roi_bom&gbraid=0AAAAADtAamieoty52sTESbTuR6i1Y8yU7&gclid=Cj0KCQjwtvqVBhCVARIsAFUxcRu9C0uR-sRNUzgjqqfoKea2UGbMMEBCy6L6Lcaw9OGkCGK9-gcNAsMaAmo6EALw_wcB",
   },
   {
+    sold: true,
     title: `Caixa organizadora de plástico`,
     desc: `Caixa organizadora grande de plástico com tampa`,
     id: `caixaorganizadoragrande`,
